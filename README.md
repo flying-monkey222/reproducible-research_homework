@@ -1,6 +1,8 @@
 # Reproducible research: version control and R
 
-(https://github.com/kshama-boop/logistic_growth)
+## Questions 1-3
+
+**Avaliable here:** (https://github.com/kshama-boop/logistic_growth)
 
 ## Instructions
 

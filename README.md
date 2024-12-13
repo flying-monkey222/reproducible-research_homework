@@ -22,6 +22,8 @@ A random seed is a value used to initialise the random number generator. The ran
 
 ## Question 5
 
+
+
 #### Question 5a
 
 - Number of rows: 32 (excluding the header)
@@ -31,6 +33,20 @@ A random seed is a value used to initialise the random number generator. The ran
 The data can be transformed to fit a linear model using a logarithmic transformation.
 
 A logarithmic transformation was applied to the columns Genome length (kb) and Virion volume (nm³) to them to fit a linear model. The transformed variables, log_Genome_Length and log_Virion_Volume, were successfully created and used.
+
+#### Question 5c
+
+- The exponent (β):
+  - Can be found from the slope of the log-transformed linear model.
+  - From the model, **β ≈ 1.5152**
+  - p-value = 6.44 x 10<sup>-10</sup>, so statistically significant
+    
+- The scaling factor (α):
+  - Can be fround from using the intercept of the model as it represents log(α).
+  - α = e<sup>7.0748</sup>) ≈ 1178.84 so **α ≈ 1178.84**
+  - p-value = .228 x 10<sup>-10</sup>, so statistically significant
+
+
 
 ## Instructions
 

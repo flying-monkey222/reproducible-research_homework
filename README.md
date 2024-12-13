@@ -16,7 +16,10 @@ The paths are colored using a gradient that transitions from dark blue to light 
 
 A random seed is a value used to initialise the random number generator. The random number generator requires an initial value, known as the seed, to start generating random numbers. By default, the generator uses the current system time as the seed, which ensures that different random sequences are produced each time the script is run. The seed() method can be used to explicitly set the seed value. By setting a specific seed, the random number generator produces the same sequence of random numbers every time the script is executed. This makes the process reproducible and ensures consistent results, which is particularly useful for debugging, testing, or replicating simulations. Without setting a seed, the output of the random process will vary each time it is run.
 
-#### Question 4b
+#### Question 4c
+
+<img width="704" alt="image" src="https://github.com/user-attachments/assets/1d79837e-ee43-4c19-92c1-4082cb520b16" />
+
 
 ## Instructions
 

@@ -89,13 +89,14 @@ ggplot(data, aes(x = log_Genome_Length, y = log_Virion_Volume)) +
 
 V = α⋅L<sup>β</sup>
 
-α = e<sup>7.0748</sup> = 1181.81
-β = 1.5152
-L = 300,000 nucleotides
+- α = e<sup>7.0748</sup> = 1181.81
+- β = 1.5152
+- L = 300,000 nucleotides
 
 V = 1181.81 * (300000<sup>1.5152</sup>)
 
-V= 2.35 x 10<sup>10</sup>
+V= 2.35 x 10<sup>10</sup> nm<sup>3</sup> 
+
 
 ## Instructions
 

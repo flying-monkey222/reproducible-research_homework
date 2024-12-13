@@ -55,29 +55,29 @@ Comparison of my values to Table 2:
 
 Code for the figure below:
 
-#Load necessary library
-library(ggplot2)
+#Load< necessary library
+<br>library(ggplot2)
 
 #Load the dataset
-data <- read.csv("Cui_etal2014.csv")
+<br>data <- read.csv("Cui_etal2014.csv")
 
 #Apply logarithmic transformations
-data$log_Genome_Length <- log(data$Genome.length..kb.)
-data$log_Virion_Volume <- log(data$Virion.volume..nm.nm.nm.)
+<br>data$log_Genome_Length <- log(data$Genome.length..kb.)
+<br>data$log_Virion_Volume <- log(data$Virion.volume..nm.nm.nm.)
 
 #Create the linear model
-model <- lm(log_Virion_Volume ~ log_Genome_Length, data = data)
+<br>model <- lm(log_Virion_Volume ~ log_Genome_Length, data = data)
 
 #Create the plot
-ggplot(data, aes(x = log_Genome_Length, y = log_Virion_Volume)) +
-  geom_point() +
-  geom_smooth(method = "lm", col = "blue", se = TRUE) +
-  labs(
-    title = "Log-log relationship between genome length and virion volume",
-    x = "log [Genome length (kb)]",
-    y = "log [Virion volume (nm3)]",
-  ) +
-  theme_minimal()
+<br>ggplot(data, aes(x = log_Genome_Length, y = log_Virion_Volume)) +
+  <br>geom_point() +
+  <br>geom_smooth(method = "lm", col = "blue", se = TRUE) +
+  <br>labs(
+    <br>title = "Log-log relationship between genome length and virion volume",
+    <br>x = "log [Genome length (kb)]",
+    <br>y = "log [Virion volume (nm3)]",
+  <br>) +
+  <br>theme_minimal()
 
 ## Instructions
 

@@ -20,6 +20,12 @@ A random seed is a value used to initialise the random number generator. The ran
 
 <img width="704" alt="image" src="https://github.com/user-attachments/assets/1d79837e-ee43-4c19-92c1-4082cb520b16" />
 
+## Question 5
+
+#### Question 5a
+
+Number of rows: 32 (excluding the header)
+Number of columns: 13
 
 ## Instructions
 

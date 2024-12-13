@@ -44,7 +44,7 @@ A logarithmic transformation was applied to the columns Genome length (kb) and V
 - The scaling factor (α):
   - Can be fround from using the intercept of the model as it represents log(α).
   - α = e<sup>7.0748</sup> ≈ 1181.81 so **α ≈ 1181.81**
-  - p-value = .228 x 10<sup>-10</sup>, so statistically significant
+  - p-value = 2.28 x 10<sup>-10</sup>, so statistically significant
 
 Comparison of my values to Table 2:
 -   In table 2 **β = 1.52** (95% CI: 1.16–1.87)

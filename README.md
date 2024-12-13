@@ -51,6 +51,34 @@ Comparison of my values to Table 2:
 -   In table 2 **α = 1182** (95% CI: 246–5,675).
 -   The calculated β and α match the reported values from the paper within their respective confidence intervals.
 
+#### Question 5d
+
+Code for the figure below:
+
+#Load necessary library
+library(ggplot2)
+
+#Load the dataset
+data <- read.csv("Cui_etal2014.csv")
+
+#Apply logarithmic transformations
+data$log_Genome_Length <- log(data$Genome.length..kb.)
+data$log_Virion_Volume <- log(data$Virion.volume..nm.nm.nm.)
+
+#Create the linear model
+model <- lm(log_Virion_Volume ~ log_Genome_Length, data = data)
+
+#Create the plot
+ggplot(data, aes(x = log_Genome_Length, y = log_Virion_Volume)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = "blue", se = TRUE) +
+  labs(
+    title = "Log-log relationship between genome length and virion volume",
+    x = "log [Genome length (kb)]",
+    y = "log [Virion volume (nm3)]",
+  ) +
+  theme_minimal()
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.

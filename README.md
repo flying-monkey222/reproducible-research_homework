@@ -43,7 +43,7 @@ A logarithmic transformation was applied to the columns Genome length (kb) and V
     
 - The scaling factor (α):
   - Can be fround from using the intercept of the model as it represents log(α).
-  - α = e<sup>7.0748</sup>) ≈ 1178.84 so **α ≈ 1178.84**
+  - α = e<sup>7.0748</sup> ≈ 1181.81 so **α ≈ 1181.81**
   - p-value = .228 x 10<sup>-10</sup>, so statistically significant
 
 Comparison of my values to Table 2:
@@ -53,31 +53,49 @@ Comparison of my values to Table 2:
 
 #### Question 5d
 
-Code for the figure below:
+Code for the figure:
 
-#Load< necessary library
-<br>library(ggplot2)
+#Load necessary library
+
+library(ggplot2)
 
 #Load the dataset
-<br>data <- read.csv("Cui_etal2014.csv")
+
+data <- read.csv("Cui_etal2014.csv")
 
 #Apply logarithmic transformations
-<br>data$log_Genome_Length <- log(data$Genome.length..kb.)
-<br>data$log_Virion_Volume <- log(data$Virion.volume..nm.nm.nm.)
+
+data$log_Genome_Length <- log(data$Genome.length..kb.)
+
+data$log_Virion_Volume <- log(data$Virion.volume..nm.nm.nm.)
 
 #Create the linear model
-<br>model <- lm(log_Virion_Volume ~ log_Genome_Length, data = data)
+
+model <- lm(log_Virion_Volume ~ log_Genome_Length, data = data)
 
 #Create the plot
-<br>ggplot(data, aes(x = log_Genome_Length, y = log_Virion_Volume)) +
-  <br>geom_point() +
-  <br>geom_smooth(method = "lm", col = "blue", se = TRUE) +
-  <br>labs(
-    <br>title = "Log-log relationship between genome length and virion volume",
-    <br>x = "log [Genome length (kb)]",
-    <br>y = "log [Virion volume (nm3)]",
-  <br>) +
-  <br>theme_minimal()
+
+ggplot(data, aes(x = log_Genome_Length, y = log_Virion_Volume)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = "blue", se = TRUE) +
+  labs(
+    title = "Log-log relationship between genome length and virion volume",
+    x = "log [Genome length (kb)]",
+    y = "log [Virion volume (nm3)]",
+  ) +
+  theme_minimal()
+
+#### Question 5e
+
+V = α⋅L<sup>β</sup>
+
+α = e<sup>7.0748</sup> = 1181.81
+β = 1.5152
+L = 300,000 nucleotides
+
+V = 1181.81 * (300000<sup>1.5152</sup>)
+
+V= 2.35 x 10<sup>10</sup>
 
 ## Instructions
 

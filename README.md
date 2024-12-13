@@ -24,8 +24,13 @@ A random seed is a value used to initialise the random number generator. The ran
 
 #### Question 5a
 
-Number of rows: 32 (excluding the header)
-Number of columns: 13
+- Number of rows: 32 (excluding the header)
+- Number of columns: 13
+  
+#### Question 5b
+The data can be transformed to fit a linear model using a logarithmic transformation.
+
+A logarithmic transformation was applied to the columns Genome length (kb) and Virion volume (nm³) to them to fit a linear model. The transformed variables, log_Genome_Length and log_Virion_Volume, were successfully created and used.
 
 ## Instructions
 

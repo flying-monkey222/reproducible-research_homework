@@ -14,15 +14,15 @@ The paths are colored using a gradient that transitions from dark blue to light 
 
 #### Question 4b
 
-A random seed is a value used to initialise the random number generator. The random number generator requires an initial value, known as the seed, to start generating random numbers. By default, the generator uses the current system time as the seed, which ensures that different random sequences are produced each time the script is run. The seed() method can be used to explicitly set the seed value. By setting a specific seed, the random number generator produces the same sequence of random numbers every time the script is executed. This makes the process reproducible and ensures consistent results, which is particularly useful for debugging, testing, or replicating simulations. Without setting a seed, the output of the random process will vary each time it is run.
+A random seed is a value used to initialise the random number generator. The random number generator requires an initial value, known as the seed, to start generating random numbers. By default, the generator uses the current system time as the seed, which ensures that different random sequences are produced each time the script is run. 
+
+The seed() method can be used to explicitly set the seed value. By setting a specific seed, the random number generator produces the same sequence of random numbers every time the script is executed. This makes the process reproducible and ensures consistent results, which is particularly useful for debugging, testing, or replicating simulations. Without setting a seed, the output of the random process will vary each time it is run.
 
 #### Question 4c
 
 <img width="704" alt="image" src="https://github.com/user-attachments/assets/1d79837e-ee43-4c19-92c1-4082cb520b16" />
 
 ## Question 5
-
-
 
 #### Question 5a
 
@@ -46,7 +46,10 @@ A logarithmic transformation was applied to the columns Genome length (kb) and V
   - α = e<sup>7.0748</sup>) ≈ 1178.84 so **α ≈ 1178.84**
   - p-value = .228 x 10<sup>-10</sup>, so statistically significant
 
-
+Comparison of my values to Table 2:
+-   In table 2 **β = 1.52** (95% CI: 1.16–1.87)
+-   In table 2 **α = 1182** (95% CI: 246–5,675).
+-   The calculated β and α match the reported values from the paper within their respective confidence intervals.
 
 ## Instructions
 

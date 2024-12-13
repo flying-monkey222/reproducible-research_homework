@@ -2,7 +2,7 @@
 
 ## Questions 1-3
 
-**Avaliable here:** (https://github.com/kshama-boop/logistic_growth)
+**Avaliable here:** (https://github.com/flying-monkey222/logistic_growth)
 
 ## Instructions
 
